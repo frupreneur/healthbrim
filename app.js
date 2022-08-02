@@ -88,12 +88,11 @@ if(questionWrapper){
 
             //  next button event listener
              nextButton.addEventListener('click', ()=>{
-                console.log('next button clicked')
 
                 // SUBMIT RESULT
                  setTimeout(()=>{
                     const selectedInput = document.querySelectorAll('.answer-container input')
-                    console.log(selectedInput)
+
 
                     selectedInput.forEach(input=>{
                       
@@ -104,9 +103,6 @@ if(questionWrapper){
                             if(submitted === DATABASE[disease].questions[idx].correct){
                                 DATABASE[disease].result++
                             }
-
-                            console.log(DATABASE[disease].result)
-                            console.log(DATABASE[disease].result)
                         }
                         
                     })
@@ -253,7 +249,6 @@ function checkInputs(){
 function displayLoading(x,m="") {
     let loading = document.createElement('div')
     loading.classList.add('loading')
-    console.log(x.children)
    Array.from(x.children).forEach(element => {
         element.style.display = 'none'
     });
