@@ -1,4 +1,169 @@
 export const DATABASE = {
+    'diabetes': {
+        route: 'diabetes-signs-and-symptoms',
+        title: 'Diabetes Signs and Symptoms',
+        description: "The warning signs can be so mild that you don't notice them. That's especially true of type 2 diabetes. Some people don't find out they have it until they get problems from long-term damage caused by the disease",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you experience slow-healing sores or cuts/wounds?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel itchy skin in some areas of your body?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Have you had yeast infections?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you experience weight gain?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel numbness and tingling of the hands and feet?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Have you had recent eye issues??',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                }
+            ]
+        
+    }
+    ,
+    'liver cancer': {
+        route: 'liver-cancer-signs-and-symptoms',
+        title: 'Liver Cancer Signs and Symptoms',
+        description: "Liver cancer is cancer that begins in the cells of your liver. Your liver is a football-sized organ that sits in the upper right portion of your abdomen, beneath your diaphragm and above your stomach. ",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you experience a lose of weight without you trying to lose weight?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Loss of appetite?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Upper abdominal pain',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Nausea and vomiting?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'General weakness and fatigue?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Is your abdomen swelling?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Doo you have yellow discoloration of your skin and the whites of your eyes (jaundice)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you secret white, chalky stools?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                    
+                }
+            ]
+        
+    }
+    ,
     'breast cancer': {
         route: 'breast-cancer-signs-and-symptoms',
         title: 'Breast Cancer Signs and Symptoms',
