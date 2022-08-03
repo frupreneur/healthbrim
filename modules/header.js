@@ -29,8 +29,7 @@ export function header() {
             </ul>
         </ul>
     </nav>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
-     crossorigin="anonymous"></script>
+    
     `;
 
 
