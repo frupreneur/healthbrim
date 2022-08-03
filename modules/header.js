@@ -29,6 +29,18 @@ export function header() {
             </ul>
         </ul>
     </nav>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
+        crossorigin="anonymous"></script>
+    <!-- HB-main -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4787236575206177"
+        data-ad-slot="6071203613"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
     `;
 
 
@@ -67,13 +79,6 @@ export function header() {
 
                 routeTo(`/${clickedMenu}.html`)
             }
-
-
-
-
-
-
-
         }
     }, 0)
 }
