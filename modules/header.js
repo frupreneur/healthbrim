@@ -2,7 +2,7 @@ import { DATABASE } from './DATABASE.js'
 
 
 
-export function header(){
+export function header() {
     const head = document.querySelector('head');
     head.innerHTML += `
     <script src="https://kit.fontawesome.com/4079e0bd44.js" crossorigin="anonymous"></script>
@@ -11,7 +11,7 @@ export function header(){
 
 
     const body = document.querySelector('body');
-    const  header = document.createElement('div');
+    const header = document.createElement('div');
 
     header.innerHTML = `
     <header>
@@ -29,58 +29,59 @@ export function header(){
             </ul>
         </ul>
     </nav>
-      
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
+     crossorigin="anonymous"></script>
     `;
 
-    
 
 
-    body.insertBefore(header , body.children[0])
-    
+
+    body.insertBefore(header, body.children[0])
+
 
     const menuIcon = document.querySelector('.menu-icon')
-            menuIcon.addEventListener('click', ()=>{
-                const popup = document.querySelector('.secondary')
-                if(popup.classList.contains('offEl')){
-                    popup.classList.remove('offEl')
-                }else{
-                    popup.classList.add('offEl')
-                }
+    menuIcon.addEventListener('click', () => {
+        const popup = document.querySelector('.secondary')
+        if (popup.classList.contains('offEl')) {
+            popup.classList.remove('offEl')
+        } else {
+            popup.classList.add('offEl')
+        }
 
-            })
+    })
 
-    setTimeout(() =>{
-       
+    setTimeout(() => {
+
         // event listeners
         const menus = document.querySelector('#menus')
-        menus.childNodes.forEach(menu=>{
+        menus.childNodes.forEach(menu => {
             menu.addEventListener('click', handleMenuClick)
         })
 
         // menu click handler
-        function handleMenuClick(e){
+        function handleMenuClick(e) {
             let clickedMenu = e.target.textContent.toLowerCase();
-            if(clickedMenu){
-                if(clickedMenu === 'home') clickedMenu = 'index';
-                if(clickedMenu === 'healthbrim.') clickedMenu = 'index';
-                if(clickedMenu === 'disclaimer / policy') clickedMenu = 'disclaimer';
-                if(clickedMenu === 'contact us') clickedMenu = 'contact';
+            if (clickedMenu) {
+                if (clickedMenu === 'home') clickedMenu = 'index';
+                if (clickedMenu === 'healthbrim.') clickedMenu = 'index';
+                if (clickedMenu === 'disclaimer / policy') clickedMenu = 'disclaimer';
+                if (clickedMenu === 'contact us') clickedMenu = 'contact';
 
                 routeTo(`/${clickedMenu}.html`)
             }
 
-            
 
 
 
-        
-           
+
+
+
         }
     }, 0)
 }
 
 
-export function routeTo(x){
+export function routeTo(x) {
     location.assign(x)
 }
 
