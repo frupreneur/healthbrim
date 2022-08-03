@@ -30,7 +30,6 @@ export function header() {
             </ul>
         </ul>
     </nav>
-    
     `;
 
 
