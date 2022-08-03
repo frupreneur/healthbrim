@@ -276,6 +276,8 @@ width: 55px
 
   display: flex;
   flex-direction: column;
+  justify-content:center;
+  /* align-items:center; */
   gap: 1rem;
 }
 .questionContainer h3 {
@@ -284,7 +286,9 @@ width: 55px
 
 .answer-container {
   display: flex;
-  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
   font-size: 1.3rem;
   color: var(--s)
 }
