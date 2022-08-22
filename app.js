@@ -4,26 +4,6 @@ import { routeTo } from './modules/header.js'
 import { footer } from './modules/footer.js'
 import { DATABASE } from './modules/DATABASE.js'
 const siteWrap = document.querySelector('.site-wrap')
-// const  adContainer = document.querySelector('.ad-container')
-
-// if(adContainer){
-//     adContainer.innerHTML = `
-//     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
-//     crossorigin="anonymous"></script>
-// <!-- HB-sidebar -->
-// <ins class="adsbygoogle"
-//     style="display:block"
-//     data-ad-client="ca-pub-4787236575206177"
-//     data-ad-slot="2397688548"
-//     data-ad-format="auto"
-//     data-full-width-responsive="true"></ins>
-// <script>
-//     (adsbygoogle = window.adsbygoogle || []).push({});
-// </script>
-//     `
-// }
-// console.log(adContainer)
-
 
 
 // execution
