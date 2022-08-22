@@ -70,22 +70,23 @@ if (questionWrapper) {
         if (clickedDisease.includes(DATABASE[disease].route)) {
 
             let title = document.createElement('div')
-            title.innerHTML = `<h2>${DATABASE[disease].title} - Check Your Health</h2> <br/>
-
+            title.innerHTML = `<h2>${DATABASE[disease].title} - Check Your Health</h2> 
+            <br/>
             <div id="ads" class="ad-container">
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
                     crossorigin="anonymous"></script>
-                <!-- hb-res -->
                 <ins class="adsbygoogle"
-                    style="display:block"
+                    style="display:block; text-align:center;"
+                    data-ad-layout="in-article"
+                    data-ad-format="fluid"
                     data-ad-client="ca-pub-4787236575206177"
-                    data-ad-slot="4772160279"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
+                    data-ad-slot="9958253487"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div> `
+                </script>   
+            </div>
+
+            `
 
             title.style.height = '250px'
             questionWrapper.appendChild(title)
@@ -232,6 +233,19 @@ if (resultsWrapper) {
      <h2 style="color:blue; margin-top: 10px;"> Conclusion</h2>
      ${conclusion}
      <br/>
+        <div id="ads" class="ad-container">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
+                crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                style="display:block; text-align:center;"
+                data-ad-layout="in-article"
+                data-ad-format="fluid"
+                data-ad-client="ca-pub-4787236575206177"
+                data-ad-slot="9958253487"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>   
+        </div>
 
         <div class="share-container">
             <h2 class="share-title">HELP YOUR FRIENDS STAY HEALTHY</h2>
