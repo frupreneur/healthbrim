@@ -4,12 +4,31 @@ import { routeTo } from './modules/header.js'
 import { footer } from './modules/footer.js'
 import { DATABASE } from './modules/DATABASE.js'
 const siteWrap = document.querySelector('.site-wrap')
+// const adsContainerPro = document.querySelector('.ad-container')
 
 
 // execution
 header()
 footer()
 
+
+
+// if(adsContainerPro){
+//     adsContainerPro.innerHTML = `
+//     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
+//                 crossorigin="anonymous"></script>
+//     <ins class="adsbygoogle"
+//         style="display:block; text-align:center;"
+//         data-ad-layout="in-article"
+//         data-ad-format="fluid"
+//         data-ad-client="ca-pub-4787236575206177"
+//         data-ad-slot="9958253487"></ins>
+//     <script>
+//         (adsbygoogle = window.adsbygoogle || []).push({});
+//     </script>   
+    
+//     `
+// }
 
 
 
@@ -49,27 +68,10 @@ if (questionWrapper) {
     for (const disease in DATABASE) {
         if (clickedDisease.includes(DATABASE[disease].route)) {
 
-            let title = document.createElement('div')
-            title.innerHTML = `<h2>${DATABASE[disease].title} - Check Your Health</h2> 
-            <br/>
-            <div id="ads" class="ad-container">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
-                    crossorigin="anonymous"></script>
-                <ins class="adsbygoogle"
-                    style="display:block; text-align:center;"
-                    data-ad-layout="in-article"
-                    data-ad-format="fluid"
-                    data-ad-client="ca-pub-4787236575206177"
-                    data-ad-slot="9958253487"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>   
-            </div>
+            let title = document.querySelector('.title-container')
+            title.innerText = `${DATABASE[disease].title} - Check Your Health`
 
-            `
-
-            title.style.height = '250px'
-            questionWrapper.appendChild(title)
+            // questionWrapper.appendChild(title)
             document.title = `${DATABASE[disease].title} - HealthBrim`;
 
             let questionContainer = document.createElement('div');
@@ -208,27 +210,14 @@ if (resultsWrapper) {
 
 
     resultsWrapper.innerHTML = `
-    <h2 style="color: rgba(0,0,0,0.7)">${resultPara}</h2>
 
-     <h2 style="color:blue; margin-top: 10px;"> Conclusion</h2>
+     <h2 style="color: rgba(0,0,0,0.7); margin-top: 10px;"> Health Diagnosis Results</h2>
      ${conclusion}
-     <br/>
-        <div id="ads" class="ad-container">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
-                crossorigin="anonymous"></script>
-            <ins class="adsbygoogle"
-                style="display:block; text-align:center;"
-                data-ad-layout="in-article"
-                data-ad-format="fluid"
-                data-ad-client="ca-pub-4787236575206177"
-                data-ad-slot="9958253487"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>   
-        </div>
+    `
 
-        <div class="share-container">
-            <h2 class="share-title">HELP YOUR FRIENDS STAY HEALTHY</h2>
+    let shareContainer = document.querySelector('.share-container')
+    shareContainer.innerHTML = `
+    <h2 class="share-title">HELP YOUR FRIENDS STAY HEALTHY</h2>
             <p>Share this website with friends so they can check their own results</p>
 
 
@@ -250,8 +239,8 @@ if (resultsWrapper) {
                 </a>
             
             </div>
-        </div>
-     
+    
+    
     `
 
 }

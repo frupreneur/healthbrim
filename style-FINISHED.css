@@ -141,7 +141,7 @@ nav a {
 
 .site-wrap,.results-wrapper, .question-wrapper, .start-wrapper, .about-wrap{
   width: 100%;
-  margin: 25px auto;
+  margin: 10px auto;
   background: white;
   padding: 25px;
   text-align: center;
@@ -326,7 +326,8 @@ ul .secondary li {
 .share-container{
   margin-top: 0.5rem;
   border: 3px dashed green;
-  padding: 0.5rem
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .ad-container{
