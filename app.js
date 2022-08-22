@@ -71,18 +71,23 @@ if (questionWrapper) {
 
             let title = document.createElement('div')
             title.innerHTML = `<h2>${DATABASE[disease].title} - Check Your Health</h2> <br/>
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-4787236575206177"
-     data-ad-slot="4442427172"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script> `
 
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4787236575206177"
+                crossorigin="anonymous">
+            </script>
+            <!-- HB-main -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4787236575206177"
+                data-ad-slot="6071203613"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            
+            `
+            title.style.height = '300px'
             questionWrapper.appendChild(title)
             document.title = `${DATABASE[disease].title} - HealthBrim`;
 
