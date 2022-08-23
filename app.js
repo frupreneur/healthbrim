@@ -211,16 +211,13 @@ if (resultsWrapper) {
 
     resultsWrapper.innerHTML = `
 
-     <h2 style="color: rgba(0,0,0,0.7); margin-top: 10px;"> Health Diagnosis Results</h2>
+     <h2 style="color: rgba(0,0,0,0.7); margin-top: 10px;">Diagnosis Results</h2>
      ${conclusion}
     `
 
     let shareContainer = document.querySelector('.share-container')
     shareContainer.innerHTML = `
     <h2 class="share-title">HELP YOUR FRIENDS STAY HEALTHY</h2>
-            <p>Share this website with friends so they can check their own results</p>
-
-
             <div class='wa-share'>
                 
                 <a class="whatsapp" href=
