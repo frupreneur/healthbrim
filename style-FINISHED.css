@@ -336,10 +336,10 @@ ul .secondary li {
 }
 
 .ad-container{
+  margin: 0 auto;
   width: 100%;
-  display: flex;
-  justify-content:center;
-  align-items:center;
+  max-width: 1200px;
+  text-align: center;
   height: auto !important;
 }
 
