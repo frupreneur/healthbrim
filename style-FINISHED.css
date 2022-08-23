@@ -24,6 +24,7 @@ img{
 
 body{
   width: 100%;
+ 
 }
 
 
@@ -336,6 +337,9 @@ ul .secondary li {
 
 .ad-container{
   width: 100%;
+  display: flex;
+  justify-content:center;
+  align-items:center;
   height: auto !important;
 }
 
