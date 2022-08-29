@@ -5,8 +5,16 @@ import { DATABASE } from './DATABASE.js'
 export function header() {
     const head = document.querySelector('head');
     head.innerHTML += `
-   
-    `
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WR93F70PG6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WR93F70PG6');
+</script>
+   `
 
 
 
@@ -41,6 +49,7 @@ export function header() {
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+
     `;
 
 
