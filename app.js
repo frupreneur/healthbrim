@@ -4,10 +4,14 @@ import { routeTo } from './modules/header.js'
 import { footer } from './modules/footer.js'
 import { DATABASE } from './modules/DATABASE.js'
 const siteWrap = document.querySelector('.site-wrap')
+const mainAdContainer = document.querySelector('.ad-container')
 // const adsContainerPro = document.querySelector('.ad-container')
 
 
 // execution
+if(mainAdContainer){
+    mainAdContainer.innerHTML = '';
+}
 header()
 footer()
 
@@ -130,7 +134,7 @@ if (questionWrapper) {
                 }, 0)
 
                 //  load while waiting
-                displayLoading(questionContainer)
+                displayLoading(questionContainer, `Registering answer... <br/> <br/>`)
                 nextButton.style.display = 'none'
 
 
@@ -202,10 +206,10 @@ if (resultsWrapper) {
     const resultPara = `
         Based on your answers, You have ${correctAnswers} symptom(s) people with ${diseaseName} have complained of to medical doctors.
     `
-    if (correctAnswers / totalQuestions <= 0.5) {
-        conclusion = ` <p style="color:green">There is a very low chance you have ${diseaseName}. <p>`
+    if (correctAnswers / totalQuestions < 0.5) {
+        conclusion = ` <p style="color:green">From on your answers, there is a very low chance you have ${diseaseName}. <p>`
     } else {
-        conclusion = ` <p  style="color:red">You posses some symptoms of ${diseaseName}, Please don't take this result as final, check with a doctor to run actual tests to confirm.`
+        conclusion = ` <p  style="color:red">From on your answers, you posses some symptoms of ${diseaseName}. (Please don't take this result as final, check with a doctor to run actual tests to confirm.)`
     }
 
 
@@ -218,6 +222,7 @@ if (resultsWrapper) {
     let shareContainer = document.querySelector('.share-container')
     shareContainer.innerHTML = `
     <h2 class="share-title">HELP YOUR FRIENDS STAY HEALTHY</h2>
+    <p class="share-description"> Share this website with your friends so they can check their health too.</p>
             <div class='wa-share'>
                 
                 <a class="whatsapp" href=
@@ -236,8 +241,6 @@ if (resultsWrapper) {
                 </a>
             
             </div>
-    
-    
     `
 
 }

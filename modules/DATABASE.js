@@ -358,6 +358,915 @@ export const DATABASE = {
                 }
             ]
         
-    }
+    },
+    Syphilis: {
+        route: 'syphilis-signs-and-symptoms',
+        title: 'Syphilis Signs and Symptoms',
+        description: "Syphilis is a chronic bacterial infection that can be transmitted through sexual contact. Syphilis is caused by a type of bacteria known as Treponema pallidum.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Have you had a single sore or multiple sores on your Penis/Vagina/Anus/Rectum/lips?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you experience rashes on the palms of your hands or bottom of your feet?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have a sore throat?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have swollen lymph glands',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'is your stool pale?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have headaches?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have appetite',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'no',
+                },
+                {
+                    question: 'Have you lost weight recently?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                    
+                },
+                {
+                    question: 'Are you fatigue (feeling very tired)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                    
+                },
+                {
+                    question: 'Do you hear a ringing, buzzing, roaring, or hissing in your ears (“tinnitus”)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                    
+                },
+                {
+                    question: 'Are you experiencing eye pain and/or red eyes?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                    
+                }
+            ]
+        
+    },
+    Chlamydia: {
+        route: 'chlamydia-signs-and-symptoms',
+        title: 'Chlamydia Signs and Symptoms',
+        description: "Chlamydia is a common sexually transmitted infection (STI) caused by bacteria. You might not know you have chlamydia because many people don't have signs or symptoms, such as genital pain and discharge from the vagina or penis.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you have painful urination?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Have you noticed discharges from your penis/vagina?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have lower abdominal pain?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel itching or burning in and around your penis/vagina',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you pee more frequently than you normally do?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you experience pain, discomfort, bleeding or a mucus-like discharge from your anus?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have a sore throat?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Are you experiencing eye pain / red eyes or discharges from your eyes?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                    
+                }
+            ]
+        
+    },
+    Hemorrhoids: {
+        route: 'hemorrhoids-signs-and-symptoms',
+        title: 'Hemorrhoids Signs and Symptoms',
+        description: "Hemorrhoids can either be internal or external. Internal hemorrhoids develop within the anus or rectum. External hemorrhoids develop outside of the anus. Hemorrhoids are also known as piles.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do feel itches on the anus?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have uncomfortable lump(s) or swelling near your anus?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel aches or pain around the anus, especially when sitting?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you see blood on tissue after you poo?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel/see skin sticking out of your anus after you poo?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                
+            ]
+        
+    },
+    Arthritis: {
+        route: 'arthritis-signs-and-symptoms',
+        title: 'Arthritis Signs and Symptoms',
+        description: "Arthritis is an inflammation of the joints. It can affect one joint or multiple joints. Arthritis is an inflammation of the joints. It can affect one joint or multiple joints.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do feel pains at your joints??',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel stiffness or difficulty moving some parts of your body?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel tired(fatigue)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have headaches?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you warm around your joints?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you experience red skin around your joints?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                
+            ]
+        
+    },
+    Bronchitis: {
+        route: 'bronchitis-signs-and-symptoms',
+        title: 'Bronchitis Signs and Symptoms',
+        description: "Bronchitis is when the tubes that carry air to your lungs, called the bronchial tubes, get inflamed and swollen. You end up with a nagging cough and mucus.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do feel congestion in your chest?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have a cough that may bring up mucus that is clear, white, yellow, or green?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have Shortness of breathe?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel a Wheezing or a whistling sound when you breathe?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have body aches?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have a sore throat?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have a fever?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                
+                {
+                    question: 'Do you have a runny, stuffy nose (catarrh)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+
+            ]
+        
+    },
+    Meningitis: {
+        route: 'meningitis-signs-and-symptoms',
+        title: 'Meningitis Signs and Symptoms',
+        description: "Meningitis is an inflammation of the fluid and three membranes (meninges) surrounding your brain and spinal cord.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you have appetite?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'no',
+                },
+                {
+                    question: 'Do you headaches?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have diarrhea?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have rashes in some parts of your body?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have a stiff neck?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Are you sensitive to bright light?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do sleep alot?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                
+                {
+                    question: 'Do you have nausea and vomiting?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+
+            ]
+        
+    },
+    Malaria: {
+        route: 'malaria-signs-and-symptoms',
+        title: 'Malaria Signs and Symptoms',
+        description: "Malaria is a serious and sometimes life-threatening tropical disease that is caused by a parasite and spreads through mosquitoes",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you have a Headache?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have cough?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel very tired (fatigue)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have diarrhea?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have Yellow skin (jaundice)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you experience Seizures/Confusion?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have bloody stools?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have abdominal pain?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                
+                {
+                    question: 'Do you have muscular or joint pains',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you breathe rapidly or have a rapid heart rate?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+
+            ]
+        
+    },
+    Gastritis: {
+        route: 'gastritis-signs-and-symptoms',
+        title: 'Gastritis Signs and Symptoms',
+        description: "Gastritis is a general term for a group of conditions with one thing in common: Inflammation of the lining of the stomach.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you feel a burning ache or pain ?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have nausea (cough/catarrh?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'have you been vomiting?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel fullness in your upper abdomen, particularly after eating?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have constipation?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you excrete a black, tarry stool?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you vomit blood or material that looks like coffee grounds?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                
+
+            ]
+        
+    },
+    HIV: {
+        route: 'hiv-aids-signs-and-symptoms',
+        title: 'H.I.V/A.I.D.S Signs and Symptoms',
+        description: "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you have fever ?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have Headaches?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel aches on your muscles and joints?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have a sore throat and painful mouth sores?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have swollen lymph nodes on the neck?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have diarrhea?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Have you lost weight?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have cough?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do  sweat a lot at night?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                
+
+            ]
+        
+    },
+    Herpes: {
+        route: 'herpes-signs-and-symptoms',
+        title: 'Herpes Signs and Symptoms',
+        description: "Genital herpes is a sexually transmitted infection (STI). It causes herpetic sores, which are painful blisters (fluid-filled bumps) that can break open and ooze fluid.",
+        result: 0,
+        idx: 0,
+        questions: 
+            [
+                {
+                    question: 'Do you have blisters on your penis / vagina?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have blisters on your buttocks (near or around the anus)?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have blisters on your mouth, lips or  face?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have swollen lymph nodes?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you have headaches?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+                   
+                    ],
+                    correct: 'yes',
+                },
+                {
+                    question: 'Do you feel general body aches?',
+                    answers: [
+                        'yes',
+                        'no',
+                        'not sure'
+
+                    ],
+                    correct: 'yes',
+                },
+                
+
+            ]
+        
+    },
     
 }
