@@ -275,7 +275,8 @@ width: 55px
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-auto-rows: 1fr;
-  justify-content:center;
+  place-items:center;
+  
   gap: 2rem;
 }
 
@@ -326,7 +327,10 @@ h2{
 
 
 button{
-  color: var(--s)
+  color: var(--s);
+  background:rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 1rem;
 }
 button:disabled{
   color: rgb(234, 233, 233) !important;
@@ -370,6 +374,11 @@ ul .secondary li {
   height: auto !important;
 }
 
+.disease-container{
+  border: 1px solid var(--s);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
 
 
 
