@@ -158,17 +158,11 @@ if (questionWrapper) {
                                 `
                         }).join('')}
                         `
-
                     // set next button disabled
                     nextButton.disabled = true;
                     checkInputs()
                 }, 3000)
-
-
-
-
             })
-
         }
     }
 
@@ -248,7 +242,6 @@ function checkInputs() {
                     const nextButton = document.querySelector('.btn-primary')
                     nextButton.disabled = false
                 }
-
             })
 
         })

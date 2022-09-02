@@ -8,7 +8,7 @@
   /* padding: 0 */
 }
 html{
-  font-size: 18px;
+  font-size: 16px;
 
 }
 
@@ -172,14 +172,14 @@ nav a {
 
 .site-wrap,.results-wrapper, .question-wrapper, .start-wrapper, .about-wrap{
   width: 100%;
-  margin: 10px auto;
+  margin: 0px auto;
   background: white;
   padding: 10px;
   border-radius: 0.5rem;
   text-align: center;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
-  transform: scale(0.98);
-  transition: transform 0.5s;
+  /* transform: scale(0.98);
+  transition: transform 0.5s; */
   max-width:1200px;
 
 }
@@ -405,6 +405,7 @@ ul .secondary li {
   .site-wrap{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    gap: 0rem !important;
 
   }
 
