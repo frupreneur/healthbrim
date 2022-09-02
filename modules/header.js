@@ -33,11 +33,9 @@ export function header() {
         ogType.setAttribute('content', 'article')
         ogDescription.setAttribute('content', DATABASE[xDisease].description)
         ogUrl.setAttribute('content',  `${window.location.href}`)
-
     }
 
    }
-
 
 
 
@@ -72,7 +70,6 @@ export function header() {
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
-
     `;
 
 
