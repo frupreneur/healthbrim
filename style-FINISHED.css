@@ -328,7 +328,18 @@ h2{
   align-items: center;
   gap: 1rem;
   font-size: 1.3rem;
-  color: var(--s)
+  color: var(--s);
+
+  background: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+}
+
+.answer-container.active{
+  border: 1px solid var(--s);
 }
 .answer-container > * {
   cursor: pointer;

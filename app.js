@@ -7,15 +7,6 @@ import { DATABASE } from './modules/DATABASE.js'
 const siteWrap = document.querySelector('.site-wrap')
 const mainAdContainer = document.querySelector('.ad-container')
 
-// Meta Data
-// const ogTitle = document.querySelector('meta[property="og:title"]')
-// const ogType = document.querySelector('meta[property="og:type"]')
-// const ogDescription = document.querySelector('meta[property="og:description"]')
-// const ogUrl = document.querySelector('meta[property="og:url"]')
-
-// ogTitle.setAttribute('content', 'hello')
-
-
 // execution
 if(mainAdContainer){
     mainAdContainer.innerHTML = '';
@@ -42,11 +33,8 @@ if (siteWrap) {
                 const clickedDisease = e.target.name
                 routeTo(`/routes/${DATABASE[clickedDisease].route}`)
             })
-
         })
     }
-
-
 }
 
 // questions handler
@@ -82,7 +70,6 @@ if (questionWrapper) {
                     </div>
                 `
                 }).join('')}
-
              `
 
             questionWrapper.appendChild(questionContainer)
@@ -94,32 +81,29 @@ if (questionWrapper) {
             nextButton.disabled = true;
             questionWrapper.appendChild(nextButton)
 
-
             //  check inputs
             checkInputs()
 
+            // answer answerHandler
+            answerHandler()
+
+    
 
             //  next button event listener
             nextButton.addEventListener('click', () => {
-
                 // SUBMIT RESULT
                 setTimeout(() => {
                     const selectedInput = document.querySelectorAll('.answer-container input')
-
-
                     selectedInput.forEach(input => {
 
                         if (input.checked) {
                             const submitted = input.nextElementSibling.innerText
 
-
                             if (submitted === DATABASE[disease].questions[idx].correct) {
                                 DATABASE[disease].result++
                             }
                         }
-
                     })
-
                 }, 0)
 
                 //  load while waiting
@@ -143,9 +127,6 @@ if (questionWrapper) {
                         return
                     }
 
-
-
-
                     questionContainer.innerHTML =
                         `
                             <h3>${DATABASE[disease].questions[idx].question}</h3>
@@ -161,6 +142,7 @@ if (questionWrapper) {
                     // set next button disabled
                     nextButton.disabled = true;
                     checkInputs()
+                    answerHandler()
                 }, 3000)
             })
         }
@@ -236,6 +218,8 @@ function checkInputs() {
     setTimeout(function () {
 
         const selectedInput = document.querySelectorAll('input')
+        const selectedAnswersInput = document.querySelector('.answer-container.active')
+        
         selectedInput.forEach(input => {
             input.addEventListener('change', function (e) {
                 if (e.target.checked) {
@@ -245,6 +229,11 @@ function checkInputs() {
             })
 
         })
+
+        if(selectedAnswersInput){
+            const nextButton = document.querySelector('.btn-primary');
+            nextButton.disabled = false;  
+        }
 
     }, 200)
 }
@@ -263,5 +252,24 @@ function displayLoading(x, m = "") {
 }
 
 
+function answerHandler(){
+    // answer containter handler
+    setTimeout(()=>{
+        const answerEls = document.querySelectorAll('.answer-container')
 
+        answerEls.forEach(answerEl=>{
+            answerEl.addEventListener('click', (e)=>{
+                const inputtedEl = e.currentTarget.querySelector('input');
+
+                // activate
+                answerEls.forEach(answerEl2=> answerEl2.classList.remove('active'))
+                e.currentTarget.classList.add('active');
+                inputtedEl.checked = true;
+
+                // checkinputs
+                checkInputs()
+            })
+        })
+    },100)
+}
 
