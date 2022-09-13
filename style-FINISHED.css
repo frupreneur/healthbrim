@@ -1,16 +1,13 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 *, *:before, *:after {
   box-sizing: border-box;
   max-width: 100%;
   margin: 0;
-  /* font-family: 'Roboto', sans-serif; */
-
-  /* padding: 0 */
 }
+
 html{
   font-size: 16px;
-
 }
+
 
 :root{
   --p: black;
@@ -22,9 +19,6 @@ main{
   justify-content: space-between;
 }
 
-
-
-
 img{
   max-width: 100%;
 }
@@ -34,24 +28,11 @@ body{
  
 }
 
-
-
-
-/* header {
-  text-align: center;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 h1 {
   color: white;
   font-size: 7vw;
   text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
 }
-
-
 
 nav {
   background: black;
@@ -66,11 +47,6 @@ nav {
   width: 100%;
   
 }
-
-
-
-
-
 
 nav a {
   text-decoration: none;
@@ -117,8 +93,6 @@ nav a {
   transform: scale(0.98);
   transition: all 0.3s;
 }
-
-
 
 /* footer */
 .footer{
@@ -414,10 +388,6 @@ ul .secondary li {
   font-size: 2rem;
 }
 
-
-
-
-
 @media screen and (max-width: 728px) {
   h2{
     font-size: 1.5rem !important;
@@ -464,6 +434,5 @@ ul .secondary li {
   .menu-icon{
     display: none;
   }
-
 
 }
