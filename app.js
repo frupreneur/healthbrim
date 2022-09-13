@@ -128,7 +128,7 @@ if (resultsWrapper) {
     const resultPara = `
         Based on your answers, You have ${correctAnswers} symptom(s) people with ${diseaseName} have complained of to medical doctors.
     `
-    if (correctAnswers / totalQuestions < 0.5) {
+    if (correctAnswers / totalQuestions < 0.8) {
         conclusion = ` <p style="color:green">From your answers, there is a very low chance you have ${diseaseName}. <p>`
     } else {
         conclusion = ` <p  style="color:red">From your answers, you posses some symptoms of ${diseaseName} patients have complained of to medical doctors.. (Please don't take this result as final, check with a doctor to run actual tests to confirm.)`
