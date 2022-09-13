@@ -57,6 +57,8 @@ nav {
   
 }
 
+
+
 nav a {
   text-decoration: none;
   display: inline-block;
@@ -392,8 +394,9 @@ ul .secondary li {
 .disease-container{
   border: 1px solid var(--s);
   border-radius: 10px;
-  padding: 2rem;
+  padding: 0.5rem;
 }
+
 .related-main{
   text-align: center;
   display: flex;
