@@ -282,7 +282,7 @@ nav a {
 }
 
 .site-wrap > * , .related-wrapper > *{
-  min-height: 330px;
+  min-height: 300px;
 }
 
 
@@ -394,7 +394,11 @@ ul .secondary li {
 .disease-container{
   border: 1px solid var(--s);
   border-radius: 10px;
-  padding: 0.5rem;
+  padding: 2rem;
+  padding-inline: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .related-main{
