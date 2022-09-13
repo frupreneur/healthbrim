@@ -140,7 +140,7 @@ export const DATABASE = {
                     correct: 'yes',
                 },
                 {
-                    question: 'Doo you have yellow discoloration of your skin and the whites of your eyes (jaundice)?',
+                    question: 'Do you have yellow discoloration of your skin and the whites of your eyes (jaundice)?',
                     answers: [
                         'yes',
                         'no',
@@ -150,7 +150,7 @@ export const DATABASE = {
                     correct: 'yes',
                 },
                 {
-                    question: 'Do you secret white, chalky stools?',
+                    question: 'Do you secret white chalky stools?',
                     answers: [
                         'yes',
                         'no',
@@ -585,7 +585,7 @@ export const DATABASE = {
         questions:
             [
                 {
-                    question: 'Do feel itches on the anus?',
+                    question: 'Do you feel itches on the anus?',
                     answers: [
                         'yes',
                         'no',
