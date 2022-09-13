@@ -5,7 +5,7 @@ export const DATABASE = {
         description: "The warning signs can be so mild that you don't notice them. That's especially true of type 2 diabetes. Some people don't find out they have it until they get problems from long-term damage caused by the disease",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do you experience slow-healing sores or cuts/wounds?',
@@ -23,27 +23,27 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
                 {
-                    question: 'Have you had yeast infections?',
+                    question: 'Do you have yeast infections?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
                 {
-                    question: 'Do you experience weight gain?',
+                    question: 'Have you experienced weight gain?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -53,7 +53,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -63,24 +63,24 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 }
             ]
-        
+
     }
     ,
-    'liver cancer': {
+    'Liver Cancer': {
         route: 'liver-cancer-signs-and-symptoms',
         title: 'Liver Cancer Signs and Symptoms',
         description: "Liver cancer is cancer that begins in the cells of your liver. Your liver is a football-sized organ that sits in the upper right portion of your abdomen, beneath your diaphragm and above your stomach. ",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
-                    question: 'Do you experience a lose of weight without you trying to lose weight?',
+                    question: 'Have you experienced a loss of weight without you trying to lose weight?',
                     answers: [
                         'yes',
                         'no',
@@ -95,7 +95,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -105,7 +105,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -115,7 +115,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -125,7 +125,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -135,7 +135,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -145,7 +145,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -155,25 +155,25 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 }
             ]
-        
+
     }
     ,
-    'breast cancer': {
+    'Breast Cancer': {
         route: 'breast-cancer-signs-and-symptoms',
         title: 'Breast Cancer Signs and Symptoms',
         description: "Breast cancer is a disease in which cells in the breast grow out of control. There are different kinds of breast cancer. The kind of breast cancer depends on which cells in the breast turn into cancer.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
-                    question: 'Do you have a new lump in the breast or underarm (armpit)?',
+                    question: 'Do you have a lump in the breast or underarm (armpit)?',
                     answers: [
                         'yes',
                         'no',
@@ -183,32 +183,32 @@ export const DATABASE = {
                     correct: 'yes',
                 },
                 {
-                    question: 'Are some parts of your breast thickening or swelling ?',
+                    question: 'Are some parts of your breast thickening or swelling?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
                 {
-                    question: 'Do you have any irritation or dimpling of your breast skin.?',
+                    question: 'Do you have any irritation or dimpling of your breast skin?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
                 {
-                    question: 'Do you have redness or flaky skin in the nipple area or the breast.?',
+                    question: 'Do you have redness or flaky skin in the nipple area or the breast?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -218,7 +218,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -228,7 +228,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -238,7 +238,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -248,13 +248,13 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 }
             ]
-        
+
     },
     Hepatitis: {
         route: 'hepatitis-signs-and-symptoms',
@@ -262,10 +262,10 @@ export const DATABASE = {
         description: "Hepatitis refers to an inflammatory condition of the liver. It is commonly the result of a viral infection, but there are other possible causes of hepatitis ",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
-                    question: 'Do you have feel fatigue/tired?',
+                    question: 'Do you feel fatigue/tired?',
                     answers: [
                         'yes',
                         'no',
@@ -280,7 +280,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -290,7 +290,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -300,7 +300,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -310,7 +310,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -320,7 +320,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -330,7 +330,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'no',
                 },
@@ -340,10 +340,10 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 },
                 {
                     question: 'Do you have yellow skin and eyes?',
@@ -351,13 +351,13 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 }
             ]
-        
+
     },
     Syphilis: {
         route: 'syphilis-signs-and-symptoms',
@@ -365,7 +365,7 @@ export const DATABASE = {
         description: "Syphilis is a chronic bacterial infection that can be transmitted through sexual contact. Syphilis is caused by a type of bacteria known as Treponema pallidum.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Have you had a single sore or multiple sores on your Penis/Vagina/Anus/Rectum/lips?',
@@ -383,7 +383,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -393,7 +393,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -403,7 +403,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -413,7 +413,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -423,7 +423,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -433,7 +433,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'no',
                 },
@@ -443,10 +443,10 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 },
                 {
                     question: 'Are you fatigue (feeling very tired)?',
@@ -454,10 +454,10 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 },
                 {
                     question: 'Do you hear a ringing, buzzing, roaring, or hissing in your ears (“tinnitus”)?',
@@ -465,10 +465,10 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 },
                 {
                     question: 'Are you experiencing eye pain and/or red eyes?',
@@ -476,13 +476,13 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 }
             ]
-        
+
     },
     Chlamydia: {
         route: 'chlamydia-signs-and-symptoms',
@@ -490,7 +490,7 @@ export const DATABASE = {
         description: "Chlamydia is a common sexually transmitted infection (STI) caused by bacteria. You might not know you have chlamydia because many people don't have signs or symptoms, such as genital pain and discharge from the vagina or penis.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do you have painful urination?',
@@ -508,7 +508,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -518,7 +518,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -528,7 +528,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -538,7 +538,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -548,7 +548,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -558,7 +558,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -568,13 +568,13 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
-                    
+
                 }
             ]
-        
+
     },
     Hemorrhoids: {
         route: 'hemorrhoids-signs-and-symptoms',
@@ -582,7 +582,7 @@ export const DATABASE = {
         description: "Hemorrhoids can either be internal or external. Internal hemorrhoids develop within the anus or rectum. External hemorrhoids develop outside of the anus. Hemorrhoids are also known as piles.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do feel itches on the anus?',
@@ -590,7 +590,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -600,7 +600,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -610,7 +610,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -630,13 +630,13 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
-                
+
             ]
-        
+
     },
     Arthritis: {
         route: 'arthritis-signs-and-symptoms',
@@ -644,7 +644,7 @@ export const DATABASE = {
         description: "Arthritis is an inflammation of the joints. It can affect one joint or multiple joints. Arthritis is an inflammation of the joints. It can affect one joint or multiple joints.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do feel pains at your joints??',
@@ -652,7 +652,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -662,7 +662,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -672,7 +672,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -687,12 +687,12 @@ export const DATABASE = {
                     correct: 'yes',
                 },
                 {
-                    question: 'Do you warm around your joints?',
+                    question: 'Do you feel warm around your joints?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -702,13 +702,13 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
-                
+
             ]
-        
+
     },
     Bronchitis: {
         route: 'bronchitis-signs-and-symptoms',
@@ -716,7 +716,7 @@ export const DATABASE = {
         description: "Bronchitis is when the tubes that carry air to your lungs, called the bronchial tubes, get inflamed and swollen. You end up with a nagging cough and mucus.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do feel congestion in your chest?',
@@ -724,7 +724,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -734,7 +734,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -744,7 +744,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -764,7 +764,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -774,7 +774,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -784,24 +784,24 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
-                
+
                 {
                     question: 'Do you have a runny, stuffy nose (catarrh)?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
 
             ]
-        
+
     },
     Meningitis: {
         route: 'meningitis-signs-and-symptoms',
@@ -809,7 +809,7 @@ export const DATABASE = {
         description: "Meningitis is an inflammation of the fluid and three membranes (meninges) surrounding your brain and spinal cord.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do you have appetite?',
@@ -817,7 +817,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'no',
                 },
@@ -827,7 +827,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -837,7 +837,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -857,7 +857,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -867,7 +867,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -877,24 +877,24 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
-                
+
                 {
                     question: 'Do you have nausea and vomiting?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
 
             ]
-        
+
     },
     Malaria: {
         route: 'malaria-signs-and-symptoms',
@@ -902,7 +902,7 @@ export const DATABASE = {
         description: "Malaria is a serious and sometimes life-threatening tropical disease that is caused by a parasite and spreads through mosquitoes",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do you have a Headache?',
@@ -910,7 +910,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -920,7 +920,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -930,7 +930,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -940,7 +940,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -960,7 +960,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -970,7 +970,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -980,18 +980,18 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
-                
+
                 {
                     question: 'Do you have muscular or joint pains',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1001,13 +1001,13 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
 
             ]
-        
+
     },
     Gastritis: {
         route: 'gastritis-signs-and-symptoms',
@@ -1015,7 +1015,7 @@ export const DATABASE = {
         description: "Gastritis is a general term for a group of conditions with one thing in common: Inflammation of the lining of the stomach.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do you feel a burning ache or pain ?',
@@ -1023,7 +1023,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1033,7 +1033,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1043,7 +1043,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1053,7 +1053,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1063,7 +1063,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1083,14 +1083,14 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
-                
+
 
             ]
-        
+
     },
     HIV: {
         route: 'hiv-aids-signs-and-symptoms',
@@ -1098,7 +1098,7 @@ export const DATABASE = {
         description: "Acquired immunodeficiency syndrome (AIDS) is a chronic, potentially life-threatening condition caused by the human immunodeficiency virus (HIV). By damaging your immune system, HIV interferes with your body's ability to fight infection and disease.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do you have fever ?',
@@ -1106,7 +1106,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1116,7 +1116,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1126,7 +1126,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1136,7 +1136,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1146,7 +1146,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1166,7 +1166,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1176,24 +1176,24 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
                 {
-                    question: 'Do  sweat a lot at night?',
+                    question: 'Do you sweat at night?',
                     answers: [
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
-                
+
 
             ]
-        
+
     },
     Herpes: {
         route: 'herpes-signs-and-symptoms',
@@ -1201,7 +1201,7 @@ export const DATABASE = {
         description: "Genital herpes is a sexually transmitted infection (STI). It causes herpetic sores, which are painful blisters (fluid-filled bumps) that can break open and ooze fluid.",
         result: 0,
         idx: 0,
-        questions: 
+        questions:
             [
                 {
                     question: 'Do you have blisters on your penis / vagina?',
@@ -1209,7 +1209,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1219,7 +1219,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1229,7 +1229,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1239,7 +1239,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1249,7 +1249,7 @@ export const DATABASE = {
                         'yes',
                         'no',
                         'not sure'
-                   
+
                     ],
                     correct: 'yes',
                 },
@@ -1263,10 +1263,10 @@ export const DATABASE = {
                     ],
                     correct: 'yes',
                 },
-                
+
 
             ]
-        
+
     },
-    
+
 }

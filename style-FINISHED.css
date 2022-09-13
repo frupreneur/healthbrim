@@ -170,9 +170,9 @@ nav a {
 
 /* questions qrapper */
 
-.site-wrap,.results-wrapper, .question-wrapper, .start-wrapper, .about-wrap{
+.site-wrap, .related-wrapper, .results-wrapper, .question-wrapper, .start-wrapper, .about-wrap{
   width: 100%;
-  margin: 0px auto;
+  margin: 10px auto;
   background: white;
   padding: 10px;
   border-radius: 0.5rem;
@@ -280,7 +280,7 @@ width: 55px
   justify-content:center
 }
 
-.site-wrap{
+.site-wrap,.related-wrapper{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-auto-rows: 1fr;
@@ -289,7 +289,7 @@ width: 55px
   gap: 2rem;
 }
 
-.site-wrap > * {
+.site-wrap > * , .related-wrapper > *{
   max-width: 500px
 }
 
@@ -401,6 +401,18 @@ ul .secondary li {
   border-radius: 10px;
   padding: 0.5rem;
 }
+.related-main{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap: 0.5rem;
+}
+.related-title{
+  color: var(--p);
+  font-size: 2rem;
+}
 
 
 
@@ -413,7 +425,7 @@ ul .secondary li {
   }
   
  
-  .site-wrap{
+  .site-wrap, .related-wrapper{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 0rem !important;

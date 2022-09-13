@@ -4,13 +4,13 @@ import { routeTo } from './modules/header.js'
 import { footer } from './modules/footer.js'
 import { DATABASE } from './modules/DATABASE.js'
 
+// DOM
 const siteWrap = document.querySelector('.site-wrap')
-const mainAdContainer = document.querySelector('.ad-container')
+const relatedWrap = document.querySelector('.related-wrapper')
+const questionWrapper = document.querySelector('.question-wrapper')
+const resultsWrapper = document.querySelector('.results-wrapper')
 
 // execution
-if(mainAdContainer){
-    mainAdContainer.innerHTML = '';
-}
 header()
 footer()
 
@@ -23,22 +23,58 @@ if (siteWrap) {
         <h2>${DATABASE[disease].title}</h2>
         <p>${DATABASE[disease].description}</p>
         <br/>
-        <button name='${disease}' class="nextBTN">Check Symptoms</button>
+        <a href="${location.protocol + '//' + location.host + '/routes/' + DATABASE[disease].route}"><button name='${disease}' class="nextBTN">Check Symptoms</button></a>
         `
         siteWrap.appendChild(diseaseContainer)
-
-        const nextBTNs = document.querySelectorAll('.nextBTN')
-        nextBTNs.forEach(nextBTN => {
-            nextBTN.addEventListener('click', (e) => {
-                const clickedDisease = e.target.name
-                routeTo(`/routes/${DATABASE[clickedDisease].route}`)
-            })
-        })
     }
 }
 
+if (relatedWrap) {
+    const relatedMain = document.querySelector('.related-main')
+    const relatedTitle = document.createElement('h2')
+    relatedTitle.classList.add('related-title')
+
+    relatedTitle.innerText = 'Popular On HealthBrim'
+    relatedMain.insertBefore(relatedTitle,relatedWrap)
+
+    const mainDiseaseArray = [];
+    const relatedDiseaseArray = [];
+    let presentDisease = location.pathname.slice(7);
+
+    if(presentDisease.includes('results.html')){
+        presentDisease = presentDisease.slice(0,-12)
+    }
+
+    Object.entries(DATABASE).forEach(x=>{
+        if(presentDisease !== `/${x[1].route}/`){
+            mainDiseaseArray.push(x)
+        }
+    })
+
+    while(relatedDiseaseArray.length < 4){
+        let randomDisease = mainDiseaseArray[Math.floor(Math.random() * mainDiseaseArray.length)]
+        let isInRelatedDisease = relatedDiseaseArray.every(x =>  x[0] !== randomDisease[0])
+
+        if(isInRelatedDisease){
+            relatedDiseaseArray.push(randomDisease)
+        }
+    }
+
+    relatedDiseaseArray.forEach(relatedDisease =>{
+        let diseaseContainer = document.createElement('div');
+        diseaseContainer.classList.add('disease-container')
+        diseaseContainer.innerHTML =
+            `
+        <h2>${relatedDisease[1].title}</h2>
+        <p>${relatedDisease[1].description}</p>
+        <br/>
+        <a href="${location.protocol + '//' + location.host + '/routes/' + relatedDisease[1].route}"><button name='${relatedDisease[0]}' class="nextBTN">Check Symptoms</button></a>
+        `
+        relatedWrap.appendChild(diseaseContainer)
+    })
+}
+
 // questions handler
-const questionWrapper = document.querySelector('.question-wrapper')
 if (questionWrapper) {
     const clickedDisease = location.pathname.slice(7)
 
@@ -46,11 +82,7 @@ if (questionWrapper) {
         if (clickedDisease.includes(DATABASE[disease].route)) {
 
             let title = document.querySelector('.title-container')
-
             title.innerText = `${DATABASE[disease].title} - Check Your Health`
-
-           
-
 
             // questionWrapper.appendChild(title)
             document.title = `${DATABASE[disease].title} - HealthBrim`;
@@ -66,94 +98,21 @@ if (questionWrapper) {
                     return `
                     <div class='answer-container'>
                         <input id=${i} type='radio' name='answer'/>
-                        <label for=${i}>${x}</label>
+                        <label class=${i}>${x}</label>
                     </div>
                 `
                 }).join('')}
-             `
-
-            questionWrapper.appendChild(questionContainer)
-
-            // next button
-            const nextButton = document.createElement('button')
-            nextButton.classList.add('btn-primary')
-            nextButton.innerText = 'SUBMIT ANSWER'
-            nextButton.disabled = true;
-            questionWrapper.appendChild(nextButton)
-
-            //  check inputs
-            checkInputs()
-
-            // answer answerHandler
-            answerHandler()
-
-    
-
-            //  next button event listener
-            nextButton.addEventListener('click', () => {
-                // SUBMIT RESULT
-                setTimeout(() => {
-                    const selectedInput = document.querySelectorAll('.answer-container input')
-                    selectedInput.forEach(input => {
-
-                        if (input.checked) {
-                            const submitted = input.nextElementSibling.innerText
-
-                            if (submitted === DATABASE[disease].questions[idx].correct) {
-                                DATABASE[disease].result++
-                            }
-                        }
-                    })
-                }, 0)
-
-                //  load while waiting
-                displayLoading(questionContainer, `Registering answer... <br/> <br/>`)
-                nextButton.style.display = 'none'
-
-
-
-                setTimeout(() => {
-                    nextButton.style.display = 'inline-block'
-                    idx++
-
-                    if (idx > DATABASE[disease].questions.length - 1) {
-                        nextButton.disabled = true;
-
-                        displayLoading(questionWrapper, `Generating results... <br/> <br/>`)
-                        setTimeout(() => {
-                            routeTo(`${location.pathname}results.html?=${DATABASE[disease].result}-${DATABASE[disease].questions.length}`)
-                        }, 5000)
-
-                        return
-                    }
-
-                    questionContainer.innerHTML =
-                        `
-                            <h3>${DATABASE[disease].questions[idx].question}</h3>
-                            ${DATABASE[disease].questions[idx].answers.map((x, i) => {
-                            return `
-                                    <div class='answer-container'>
-                                        <input id=${i} type='radio' name='answer'/>
-                                        <label for=${i}>${x}</label>
-                                    </div>
-                                `
-                        }).join('')}
-                        `
-                    // set next button disabled
-                    nextButton.disabled = true;
-                    checkInputs()
-                    answerHandler()
-                }, 3000)
-            })
+             `            
+             questionWrapper.appendChild(questionContainer)
+           
+             // answer answerHandler
+            answerHandler(DATABASE, disease, idx, questionContainer, questionWrapper)
         }
     }
-
 }
 
 
-
 // results handler
-const resultsWrapper = document.querySelector('.results-wrapper')
 if (resultsWrapper) {
     let diseaseName, conclusion;
     const diseaseRoute = location.pathname.slice(8).slice(0, location.pathname.slice(8).indexOf('/'))
@@ -161,8 +120,6 @@ if (resultsWrapper) {
     for (let disease in DATABASE) {
         if (DATABASE[disease].route === diseaseRoute) {
             diseaseName = disease
-
-
         }
     }
     const answerString = location.href.slice(location.href.indexOf('=') + 1).split('-')
@@ -212,33 +169,7 @@ if (resultsWrapper) {
 
 }
 
-
 // functions
-function checkInputs() {
-    setTimeout(function () {
-
-        const selectedInput = document.querySelectorAll('input')
-        const selectedAnswersInput = document.querySelector('.answer-container.active')
-        
-        selectedInput.forEach(input => {
-            input.addEventListener('change', function (e) {
-                if (e.target.checked) {
-                    const nextButton = document.querySelector('.btn-primary')
-                    nextButton.disabled = false
-                }
-            })
-
-        })
-
-        if(selectedAnswersInput){
-            const nextButton = document.querySelector('.btn-primary');
-            nextButton.disabled = false;  
-        }
-
-    }, 200)
-}
-
-
 function displayLoading(x, m = "") {
     let loading = document.createElement('div')
     loading.classList.add('loading')
@@ -251,25 +182,78 @@ function displayLoading(x, m = "") {
     x.appendChild(loading)
 }
 
-
-function answerHandler(){
+function answerHandler(db, d, idx, questionContainer, questionWrapper) {
     // answer containter handler
-    setTimeout(()=>{
+    setTimeout(() => {
         const answerEls = document.querySelectorAll('.answer-container')
 
-        answerEls.forEach(answerEl=>{
-            answerEl.addEventListener('click', (e)=>{
+        answerEls.forEach(answerEl => {
+            answerEl.addEventListener('click', (e) => {
                 const inputtedEl = e.currentTarget.querySelector('input');
 
-                // activate
-                answerEls.forEach(answerEl2=> answerEl2.classList.remove('active'))
+                // Activate
+                answerEls.forEach(answerEl2 => answerEl2.classList.remove('active'))
                 e.currentTarget.classList.add('active');
                 inputtedEl.checked = true;
 
-                // checkinputs
-                checkInputs()
+                // Submit Result
+                submitResult(db, d, idx)
+
+                // Display loading
+                setTimeout(() => {
+                    displayLoading(questionContainer, `Registering answer... <br/> <br/>`)
+                }, 250)
+                // Generate results
+                resultGenerator(db, d, idx, questionContainer, questionWrapper)
             })
         })
-    },100)
+    }, 100)
 }
+
+
+function submitResult(db, d, idx) {
+    setTimeout(() => {
+        const selectedInput = document.querySelectorAll('.answer-container.active input')
+        selectedInput.forEach(input => {
+            if (input.checked) {
+                const submitted = input.nextElementSibling.innerText
+                if (submitted === db[d].questions[idx].correct) {
+                    db[d].result++
+                }
+            }
+        })
+    }, 500)
+}
+
+function resultGenerator(db, d, idx, questionContainer, questionWrapper) {
+    setTimeout(() => {
+        idx++
+        if (idx > db[d].questions.length - 1) {
+            displayLoading(questionWrapper, `Generating results... <br/> <br/>`)
+            setTimeout(() => {
+                routeTo(`${location.pathname}results.html?=${db[d].result}-${db[d].questions.length}`)
+            }, 5000)
+
+            return
+        }
+
+        questionContainer.innerHTML =
+            `
+                <h3>${db[d].questions[idx].question}</h3>
+                ${db[d].questions[idx].answers.map((x, i) => {
+                return `
+                        <div class='answer-container'>
+                            <input id=${i} type='radio' name='answer'/>
+                            <label class=${i}>${x}</label>
+                        </div>
+                    `
+            }).join('')}
+            `
+        // set next button disabled
+        answerHandler(db, d, idx, questionContainer, questionWrapper)
+    }, 1500)
+
+}
+
+
 
