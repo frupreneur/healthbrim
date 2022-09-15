@@ -82,6 +82,8 @@ if (questionWrapper) {
         if (clickedDisease.includes(DATABASE[disease].route)) {
 
             let title = document.querySelector('.title-container')
+            title.remove()
+            questionWrapper.appendChild(title)
             title.innerText = `${DATABASE[disease].title} - Check Your Health`
 
             // questionWrapper.appendChild(title)
