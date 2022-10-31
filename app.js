@@ -84,8 +84,8 @@ if (questionWrapper) {
             let title = document.querySelector('.title-container')
             title.innerText = `${DATABASE[disease].title} - Check Your Health`
 
-            // questionWrapper.appendChild(title)
-            document.title = `${DATABASE[disease].title} - HealthBrim`;
+            // // questionWrapper.appendChild(title)
+            // document.title = `${DATABASE[disease].title} - HealthBrim`;
 
             let questionContainer = document.createElement('div');
             questionContainer.classList.add('questionContainer')
