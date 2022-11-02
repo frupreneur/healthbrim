@@ -27,6 +27,12 @@ body{
   width: 100%;
  
 }
+h1.title-container{
+  color: var(--s);
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 2.5rem;
+}
 
 h1 {
   color: white;
